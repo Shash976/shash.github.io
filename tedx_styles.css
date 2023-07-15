@@ -1,0 +1,162 @@
+:root {
+    --tedRed: #eb0028;
+    --gray: #424141;
+}
+
+body {
+    background-color: black;
+    font-family: Inter;
+    margin: 0%;
+    color: white;
+}
+
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    text-decoration: none;
+
+}
+
+h1 {
+    font-weight: 900;
+}
+
+/* Nav Bar */
+#nav-section {
+    padding: 2%;
+    padding-right: 5%;
+    max-width: none;
+    overflow: hidden;
+    background-color: var(--tedRed);
+    
+}
+
+#nav-bar {
+    list-style-type: none;
+    padding-right: 15%;
+    margin-right: 3%;
+    float: right;
+}
+
+.inline_horizontal {
+    display: inline;
+    padding: 10%;
+    font-weight: bold;
+}
+
+
+/* Nav Bar */
+
+#main-div{
+    padding: 15%;
+}
+
+@keyframes image_glide_in {
+        
+}
+
+
+#event-logo-front {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;;
+    display: block;
+    width: 90%;
+    height: auto;
+
+}
+
+#info-table{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-collapse: collapse;
+}
+
+#info-row {
+    display: flex;
+}
+
+.info-cell {
+    padding: 1%;
+    border: 1px solid var(--gray);
+    display: flex;
+    justify-content: center;
+}
+
+.info-cell > p {
+    padding: 1%;
+}
+
+#tedx-main-highlighted {
+    color: var(--tedRed);
+    background-color: white;
+}
+
+#about-section {
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+
+#about-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+}
+
+table#about-table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 50%;
+    
+}
+
+td:not(.panel, .info-cell) {
+    width: 50%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+#team-section {
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+.panel{
+    padding: 2% 
+}
+
+.panel:hover{
+    background-color: var(--gray);
+}
+
+#about-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+}
+
+.panelTitle{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+footer{
+    background-color: var(--tedRed);
+}
+
+#footer-table{
+    padding: 2%;
+    width: 75%;
+}
