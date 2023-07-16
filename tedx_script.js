@@ -3,10 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
     makePanels(document.querySelector('#team-section'))
 
     const map = document.querySelector("#footer-map")
-    map.width = 1 * window.innerWidth
-    map.height = 0.3 * window.innerHeight
-    
+    map.width = document.querySelector("footer").clientWidth
+    map.height = 0.3 * window.innerHeight   
 
+})
+
+document.onresize(() => {
+    map.width = document.querySelector("footer").clientWidth
+    map.height = 0.3 * window.innerHeight
 })
 
 function makePanels(section) {

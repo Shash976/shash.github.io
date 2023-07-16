@@ -28,7 +28,7 @@ h1 {
 
 /* Nav Bar */
 #nav-section {
-    padding: 2%;
+    padding: 1%;
     padding-right: 5%;
     padding-bottom: 0%;
     max-width: none;
@@ -48,6 +48,7 @@ h1 {
 .inline_horizontal {
     display: inline;
     padding: 10%;
+    padding-bottom: 2%;
     font-weight: bold;
 }
 
