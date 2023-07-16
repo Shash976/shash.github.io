@@ -176,3 +176,13 @@ footer{
     width: 33.33%;
     text-align: left;
 }
+
+#footer-table h4, #footer-table p {
+    display: inline;
+}
+
+iframe#footer-map{
+    height: 30%;
+    width: 100%;
+    border: 0;
+}
