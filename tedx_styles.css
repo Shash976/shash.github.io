@@ -168,3 +168,10 @@ footer{
     padding: 2%;
     width: 75%;
 }
+
+
+#footer-table td {
+    padding: 2%;
+    vertical-align: top;
+    width: 50%;
+}
