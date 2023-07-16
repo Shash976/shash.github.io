@@ -33,6 +33,8 @@ h1 {
     max-width: none;
     overflow: hidden;
     background-color: var(--tedRed);
+    display: flex;
+    justify-content: flex-end;
     
 }
 
