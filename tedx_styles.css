@@ -164,6 +164,10 @@ footer{
     background-color: var(--tedRed);
 }
 
+#footer-div {
+    padding-left: 5%;
+}
+
 #footer-table{
     padding: 2%;
     width: 75%;
