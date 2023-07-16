@@ -1,17 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     navSection(document.querySelector('#nav-section'))
     makePanels(document.querySelector('#team-section'))
-
+/*
     const map = document.querySelector("#footer-map")
     map.width = document.querySelector("footer").clientWidth
     map.height = 0.3 * window.innerHeight   
-
+*/
 })
 
-document.onresize(() => {
-    map.width = document.querySelector("footer").clientWidth
-    map.height = 0.3 * window.innerHeight
-})
 
 function makePanels(section) {
     var table = document.createElement('table')
