@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     navSection(document.querySelector('#nav-section'))
     if(document.querySelector('#team-section')){makePanels(document.querySelector('#team-section'))}
+    if(document.querySelector('#speakers-section')){makePanels(document.querySelector('#speakers-section'))}
     makeFooter()
 })
 
@@ -43,6 +44,7 @@ function navSection(nav_section) {
     var navPages = {
         "Home" : "index.html",
         "About" : "index.html#about-section",
+        "Speakers":"speakers.html",
         "Team":"teamPage.html",
         "Register":"https://forms.google.com",
         "Contact" : "#footer-table"
