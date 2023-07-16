@@ -119,7 +119,7 @@ table#about-table {
     
 }
 
-td:not(.panel, .info-cell) {
+table#about-table td {
     width: 50%;
     vertical-align: top;
     padding: 10px;
