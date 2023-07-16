@@ -173,5 +173,6 @@ footer{
 #footer-table td {
     padding: 2%;
     vertical-align: top;
-    width: 50%;
+    width: 33.33%;
+    text-align: left;
 }
