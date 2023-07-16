@@ -1,12 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     navSection(document.querySelector('#nav-section'))
     makePanels(document.querySelector('#team-section'))
-/*
-    const map = document.querySelector("#footer-map")
-    map.width = document.querySelector("footer").clientWidth
-    map.height = 0.3 * window.innerHeight   
-*/
+
+    mapSize()
 })
+
+window.onresize(()=>{
+    mapSize()
+})
+
+function mapSize() {
+    const map = document.querySelector("#footer-map")
+    map.width = document.querySelector("#map-div").clientWidth - 10
+    map.height = 0.32 * window.innerHeight
+}
 
 
 function makePanels(section) {

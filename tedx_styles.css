@@ -187,3 +187,9 @@ footer{
 #footer-table h4, #footer-table p {
     display: inline;
 }
+
+#map-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
