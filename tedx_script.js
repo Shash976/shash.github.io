@@ -1,10 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
     navSection(document.querySelector('#nav-section'))
+    default_config()
+    load_page('home')
     if(document.querySelector('#team-section')){makePanels(document.querySelector('#team-section'))}
     if(document.querySelector('#speakers-section')){makePanels(document.querySelector('#speakers-section'))}
     makeFooter()
 })
 
+function default_config() {
+    const pages = ["home", "about", "team", "speakers", "contact"]
+    for (var p of pages) {
+        if (document.querySelector(`#${p}-section`)){
+            document.querySelector(`#${p}-section`).style.display = "none"
+        }
+    }
+}
+
+function load_page(page){
+    const pages = ["home", "about", "team", "speakers", "contact"]
+    if (pages.includes(page)) {
+        for (var p of pages) {
+            if (p==page){
+                document.querySelector(`#${p}-section`).style.display = "block";
+            } else {
+                document.querySelector(`#${p}-section`).style.display = "none";
+            }
+        }
+    }
+    
+}
 
 function mapSize() {
     const map = document.querySelector("#footer-map")
@@ -42,21 +66,29 @@ function navSection(nav_section) {
     nav_bar.id = "nav-bar"
     nav_section.appendChild(nav_bar) 
     var navPages = {
-        "Home" : "index.html",
-        "About" : "index.html#about-section",
-        "Speakers":"speakers.html",
-        "Team":"teamPage.html",
+        "Home" : "home",
+        "About" : "about",
+        "Speakers":"speakers",
+        "Team":"team",
         "Register":"https://forms.google.com",
-        "Contact" : "#footer-table"
+        "Contact" : "contact"
     }
 
-    for (var page in navPages) {
+    for (let page in navPages) {
         var nav_page = document.createElement('li')
+        console.log(page)
         nav_page.className = "inline_horizontal"
         var nav_link = document.createElement('a')
         nav_link.className = "nav-link"
-        nav_link.href = navPages[page]
+        nav_link.href = page == "Register" ? navPages[page] : "#"
         nav_link.innerHTML = page
+        if (page != "Register") {
+            nav_link.onclick = (event) => {
+                event.preventDefault();
+                console.log(`${page} clicked`);
+                load_page(navPages[page]);
+            }
+        }
         nav_page.appendChild(nav_link)
         nav_bar.appendChild(nav_page) 
     }
