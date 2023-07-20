@@ -70,7 +70,7 @@ function navSection(nav_section) {
         "About" : "about",
         "Speakers":"speakers",
         "Team":"team",
-        "Register":"https://forms.google.com",
+        "Register":"https://docs.google.com/forms/d/1Pq5ODSONzMcON7igHOM9j-mc4M2MqUAf6c5ek-QjHlg/edit",
         "Contact" : "contact"
     }
 
