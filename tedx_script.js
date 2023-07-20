@@ -70,7 +70,7 @@ function navSection(nav_section) {
         "About" : "about",
         "Speakers":"speakers",
         "Team":"team",
-        "Register":"https://docs.google.com/forms/d/1Pq5ODSONzMcON7igHOM9j-mc4M2MqUAf6c5ek-QjHlg/edit",
+        "Audition":"https://docs.google.com/forms/d/1Pq5ODSONzMcON7igHOM9j-mc4M2MqUAf6c5ek-QjHlg/edit",
         "Contact" : "contact"
     }
 
@@ -80,9 +80,9 @@ function navSection(nav_section) {
         nav_page.className = "inline_horizontal"
         var nav_link = document.createElement('a')
         nav_link.className = "nav-link"
-        nav_link.href = page == "Register" ? navPages[page] : "#"
+        nav_link.href = page == "Audition" ? navPages[page] : "#"
         nav_link.innerHTML = page
-        if (page != "Register") {
+        if (page != "Audition") {
             nav_link.onclick = (event) => {
                 event.preventDefault();
                 console.log(`${page} clicked`);
